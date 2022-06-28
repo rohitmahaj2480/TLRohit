@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 		features= "src/test/resources/org/featurefile",
 		glue= {"org/appHook","org/stepDef"},
 		dryRun=false,
-		tags="@Smoke or @Regression",
+		tags="@Smoke",
 		monochrome=true,
 		plugin= {"pretty",
 				"html:./Reports/html_Report/Report.html",
