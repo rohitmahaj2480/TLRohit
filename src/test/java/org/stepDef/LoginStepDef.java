@@ -33,9 +33,9 @@ public class LoginStepDef {
 		Assert.assertTrue(AppHooks.lf.verifyLoginPage());
 	}
 
-	@When("User do login")
-	public void user_do_login() {
-		AppHooks.lf.doLogin();
-		System.out.println("login Before :"+Thread.currentThread().getId());  
-	}	
+//	@When("User do login")
+//	public void user_do_login() {
+//		AppHooks.lf.doLogin();
+//		System.out.println("login Before :"+Thread.currentThread().getId());  
+//	}	
 }
