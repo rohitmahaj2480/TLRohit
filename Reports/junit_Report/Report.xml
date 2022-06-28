@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="43.751">
+<testcase classname="Verify Details on cart Page" name="Verify that when user clicks on add to cart, the product should be added to cart" time="43.429">
+<system-out><![CDATA[Given User is on login page.................................................passed
+When User do login..........................................................passed
+Given User is on homepage...................................................passed
+When User search product as "Wings of Fire".................................passed
+And User click on perticular product from suggested prduct..................passed
+Then User is on product page................................................passed
+When User click  on addtocart Button........................................passed
+Then User is redirected on the cart page....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
