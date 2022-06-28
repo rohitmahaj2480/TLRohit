@@ -27,13 +27,13 @@ public class AppHooks {
 	@Before 
 	public void launchBrowser() {
 		DriverFactory df=new DriverFactory();
-		driver=df.initDriver("CH");
-		lf=new LoginPageFlip(driver);
-		bu=new BaseUtilityUpdated();
+		driver = df.initDriver("CH");
+		lf = new LoginPageFlip(driver);
+		bu = new BaseUtilityUpdated();
 		hp = new HomePage(driver);
-		plg =new ProductListPg(driver);
-		pp=new ProductPage(driver);
-		cp=new CartPage(driver);
+		plg = new ProductListPg(driver);
+		pp = new ProductPage(driver);
+		cp = new CartPage(driver);
 		//WebDriverManager.chromedriver().setup();
 		//driver=new ChromeDriver();
 		driver.get("https://www.flipkart.com/");
@@ -49,7 +49,7 @@ public class AppHooks {
 	}
 	@After(order=1)
 	public void tearDown() {
-		//driver.close();
+		driver.quit();
 	}
 
 }
